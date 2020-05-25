@@ -232,7 +232,7 @@ class ComponentsNavbar extends React.Component {
 
                   <DropdownItem tag={Link} to="/failures">
                     <i className="tim-icons icon-trash-simple" />
-                    Spectacular Failures
+                    Spectacular Fails
                   </DropdownItem>
 
                   <DropdownItem tag={Link} to="/stack">
