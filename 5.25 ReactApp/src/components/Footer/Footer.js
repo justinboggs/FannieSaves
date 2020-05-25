@@ -16,13 +16,9 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
-  NavItem,
-  NavLink,
-  Nav,
   Container,
   Row,
   Col,
@@ -51,7 +47,7 @@ class Footer extends React.Component {
                   id="github_joseph"
                   target="_blank"
                 >
-                  <img src={require('../../assets/img/joseph.png')} />
+                  <img src={require('../../assets/img/joseph.png')} alt="joseph" />
                 </Button>
                 <UncontrolledTooltip delay={0} target="github_joseph">
                   Joseph McManus
@@ -64,7 +60,7 @@ class Footer extends React.Component {
                   id="github_justin"
                   target="_blank"
                 >
-                  <img src={require('../../assets/img/justin.png')} />
+                  <img src={require('../../assets/img/justin.png')} alt="justin" />
                 </Button>
                 <UncontrolledTooltip delay={0} target="github_justin">
                   Justin Boggs
@@ -77,7 +73,7 @@ class Footer extends React.Component {
                   id="github_kip"
                   target="_blank"
                 >
-                  <img src={require('../../assets/img/kip.png')} />
+                  <img src={require('../../assets/img/kip.png')} alt="kip" />
                 </Button>
                 <UncontrolledTooltip delay={0} target="github_kip">
                   Kip Madden
@@ -90,7 +86,7 @@ class Footer extends React.Component {
                   id="github_sean"
                   target="_blank"
                 >
-                  <img src={require('../../assets/img/sean.jpg')} />
+                  <img src={require('../../assets/img/sean.jpg')} alt="sean" />
                 </Button>
                 <UncontrolledTooltip delay={0} target="github_sean">
                   Sean Del Alcazar
@@ -103,7 +99,7 @@ class Footer extends React.Component {
                   id="github_scott"
                   target="_blank"
                 >
-                  <img src={require('../../assets/img/scott.png')} />
+                  <img src={require('../../assets/img/scott.png')} alt="scott" />
                 </Button>
                 <UncontrolledTooltip delay={0} target="github_scott">
                   Scott Whigham

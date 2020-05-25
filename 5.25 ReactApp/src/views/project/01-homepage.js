@@ -164,8 +164,7 @@ class Homepage extends React.Component {
                 <Col md="12">
                   <hr className="line-info" />
                   <h1>
-                    <a id="FannieSaves">FannieSaves </a>
-                    <span className="text-info">can help your team spot bad loans fast</span>
+                    <p>FannieSaves <span className="text-info">can help your team spot bad loans fast</span></p>
                   </h1>
                 </Col>
               </Row>
@@ -273,7 +272,7 @@ class Homepage extends React.Component {
           
           {/* Large Achievements */}
           <section className="section section-lg">
-            <h1><a name="goals" className="text-hide">The Project</a></h1>
+            <h1><p name="goals" className="text-hide">The Project</p></h1>
             <br />
             <br />
             <br />

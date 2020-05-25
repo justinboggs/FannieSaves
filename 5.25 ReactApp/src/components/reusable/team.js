@@ -24,7 +24,7 @@ class Team extends React.Component {
   render() {
     return (
       <div className="section section-typo">
-        <a name="team" className="text-hide">Meet the team</a>
+        <h3 name="team" className="text-hide">Meet the team</h3>
         <div className="space-50" />
       
         <img alt="..." className="path" src={require("assets/img/path1.png")} />

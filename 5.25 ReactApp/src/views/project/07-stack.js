@@ -17,19 +17,9 @@
 */
 import React from "react";
 
-import Team from "components/reusable/team.js"
-
 // reactstrap components
 import {
   Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  ListGroupItem,
-  ListGroup,
-  Container,
   Row,
   Col
 } from "reactstrap";

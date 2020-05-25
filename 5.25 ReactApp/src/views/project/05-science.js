@@ -20,14 +20,6 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  ListGroupItem,
-  ListGroup,
-  Container,
   Row,
   Col
 } from "reactstrap";

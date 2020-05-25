@@ -31,11 +31,7 @@ import {
   Label,
   FormGroup,
   Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
-  Row,
   Col
 } from "reactstrap";
 

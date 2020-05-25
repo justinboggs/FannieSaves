@@ -16,9 +16,6 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
-
-import Team from "components/reusable/team.js"
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -26,15 +23,10 @@ import Footer from "components/Footer/Footer.js";
 
 // reactstrap components
 import {
-  Button,
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   CardTitle,
-  ListGroupItem,
-  ListGroup,
-  Container,
   Row,
   Col
 } from "reactstrap";
@@ -57,8 +49,11 @@ class Visualizations extends React.Component {
                 <CardHeader>
                   <Row>
                     <Col className="text-left" sm="6">
+                      {/*
+                        Removed header
                       <hr className="line-info" />
                       <h5 className="card-category"></h5>
+                      */}
                       <CardTitle tag="h2">Visualizations</CardTitle>
                     </Col>
                   </Row>
