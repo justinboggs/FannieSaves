@@ -1,5 +1,6 @@
 api_keys.py
 catboost_info
+node_modules
 .ipynb_checkpoints
 
 # Byte-compiled / optimized / DLL files
