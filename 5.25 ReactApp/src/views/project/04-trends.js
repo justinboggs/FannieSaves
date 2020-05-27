@@ -16,131 +16,89 @@
 
 */
 import React from "react";
+import tableau from "tableau-api";  
+
+// core components
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Footer from "components/Footer/Footer.js";
 
 // reactstrap components
 import {
-  Button,
+  Card,
+  CardHeader,
+  CardBody,
+  CardTitle,
   Row,
+  Container,
   Col
 } from "reactstrap";
-
-// core components
-import ComponentsNavbar from "components/Navbars/IndexNavbar.js";
-import Footer from "components/Footer/Footer.js";
 
 class Trends extends React.Component {
   componentDidMount() {
     document.body.classList.toggle("landing-page");
+    this.initViz();
+    /*this.initViz2();*/
   }
   componentWillUnmount() {
     document.body.classList.toggle("landing-page");
   }
+
+  initViz() {
+    const vizUrl = 'https://public.tableau.com/views/FMAcqPerfFMACALL/FicoRateDiff?:display_count=y&publish=yes&:origin=viz_share_link';  
+    const vizContainer = this.vizContainer;
+    const options = {
+      width: "100%",
+      height: "1000px",
+    };
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options);  
+  }
+
+  /*initViz2() {
+    const vizUrl = 'https://public.tableau.com/views/FMAcqPerfFMACALL/FicoRateDiff?:display_count=y&publish=yes&:origin=viz_share_link';  
+    const vizContainer2 = this.vizContainer2;
+    const options = {
+      width: "100%",
+      height: "1000px",
+    };
+    let viz2 = new window.tableau.Viz(vizContainer2, vizUrl, options);  
+  }*/
+
   render() {
     return (
         <>
-        <ComponentsNavbar />
+        <IndexNavbar />
 
         <div className="wrapper">
+          <section className="section section-lg">
+            <Col md="12">
+              <Card className="card-chart card-plain">
+                <CardHeader>
+                  <Row>
+                    <Col className="text-left" sm="6">
+                      <CardTitle tag="h2">Visualizations</CardTitle>
+                    </Col>
+                  </Row>
+                </CardHeader>
+                <Container>
+                <div className="page-header header-filter">
+                <CardBody>
 
-          {/*==========
-          Splash screen
-          =============*/}
-          <div className="page-header">
-            <img
-              alt="..."
-              className="path"
-              src={require("assets/img/blob.png")}
-            />
-            <img
-              alt="..."
-              className="path2"
-              src={require("assets/img/path2.png")}
-            />
-            <img
-              alt="..."
-              className="shapes triangle"
-              src={require("assets/img/triunghiuri.png")}
-            />
-            <img
-              alt="..."
-              className="shapes wave"
-              src={require("assets/img/waves.png")}
-            />
-            <img
-              alt="..."
-              className="shapes squares"
-              src={require("assets/img/patrat.png")}
-            />
-            <img
-              alt="..."
-              className="shapes circle"
-              src={require("assets/img/cercuri.png")}
-            />
-            <div className="content-center">
-              <Row className="row-grid justify-content-between align-items-center text-left">
-                <Col lg="6" md="6">
-                  <h1 className="text-white">
-                    Let AI & Machine Learning save <br />
-                    Fannie Mae money
-                  </h1>
-                  <p className="text-white mb-3">
-                    Use the power of our data scientists and their amazing 
-                    <span className="text-danger"> machine learning prediction engine </span>
-                    to find the best loans and avoid defaults!
-                  </p>
-                  <div className="btn-wrapper mb-3">
-                    <Button
-                      color="info"
-                      href="#project"
-                    >
-                      Let's get started! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <i className="tim-icons icon-triangle-right-17" />
-                    </Button>
-                  </div>
-                  <div className="btn-wrapper">
-                    <div className="button-container">
-                      <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-dribbble" />
-                      </Button>
-                      <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-facebook" />
-                      </Button>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg="4" md="5">
-                  <img
-                    alt="..."
-                    className="img-fluid"
-                    src={require("assets/img/datascientist4.png")}
-                  />
-                </Col>
-              </Row>
-            </div>
-          </div>
+                <div ref={(div) => { this.vizContainer = div }}>
+                </div>
 
+                {/*<div ref={(div) => { this.vizContainer2 = div }}>
+                </div>*/}
+
+                </CardBody>
+                </div>
+                </Container>
+              </Card>
+            </Col>
+          </section>
+          
         </div>
-
-<Footer />
-</>
+        <Footer />
+      </>
     );
   }
 }
