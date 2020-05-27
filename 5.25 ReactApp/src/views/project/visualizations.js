@@ -16,6 +16,7 @@
 
 */
 import React from "react";
+import tableau from "tableau-api";  
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -28,20 +29,38 @@ import {
   CardBody,
   CardTitle,
   Row,
+  Container,
   Col
 } from "reactstrap";
 
 class Visualizations extends React.Component {
   componentDidMount() {
     document.body.classList.toggle("landing-page");
+    this.initViz()
   }
   componentWillUnmount() {
     document.body.classList.toggle("landing-page");
   }
+
+
+  
+  initViz() {
+    const vizUrl = 'https://public.tableau.com/views/FMAcqPerfFMACALL/FicoRateDiff?:display_count=y&publish=yes&:origin=viz_share_link';  
+    const vizContainer = this.vizContainer;
+    const options = {
+      width: "100%",
+      height: "1000px",
+    };
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options);  
+  }
+
+
+
   render() {
     return (
         <>
         <IndexNavbar />
+
         <div className="wrapper">
           <section className="section section-lg">
             <Col md="12">
@@ -49,25 +68,26 @@ class Visualizations extends React.Component {
                 <CardHeader>
                   <Row>
                     <Col className="text-left" sm="6">
-                      {/*
-                        Removed header
-                      <hr className="line-info" />
-                      <h5 className="card-category"></h5>
-                      */}
                       <CardTitle tag="h2">Visualizations</CardTitle>
                     </Col>
                   </Row>
                 </CardHeader>
+                <Container>
+                <div className="page-header header-filter">
                 <CardBody>
 
-{/* Tableau iframe code goes here */}
+                <div ref={(div) => { this.vizContainer = div }}>
+                </div> 
 
                 </CardBody>
+                </div>
+                </Container>
               </Card>
             </Col>
           </section>
-          <Footer />
+          
         </div>
+        <Footer />
       </>
     );
   }

@@ -159,31 +159,7 @@ class ComponentsNavbar extends React.Component {
 
             <Nav navbar>
 
-              <NavItem>
-
-               <Button
-                 className="nav-link d-none d-lg-block"
-                 color="primary"
-                 onClick={this.scrollToDownload}
-               >
-                 <i className="tim-icons icon-spaceship" /> "AI - Which potential loans will default?"
-               </Button>
-
-             </NavItem>
-
-              <NavItem>
-
-                <Button
-                  className="nav-link d-none d-lg-block"
-                  color="default"
-                  onClick={this.scrollToDownload}
-                >
-                  <i className="tim-icons icon-coins" /> "AI - What are the trends in mortgages today?"
-                </Button>
-
-              </NavItem>
-
-              <UncontrolledDropdown nav>
+                          <UncontrolledDropdown nav>
 
                 <DropdownToggle
                   caret
@@ -209,11 +185,6 @@ class ComponentsNavbar extends React.Component {
                     The Data
                   </DropdownItem>
 
-                  <DropdownItem tag={Link} to="/crazy">
-                    <i className="tim-icons icon-calendar-60" />
-                    These Crazy Times
-                  </DropdownItem>
-
                   <DropdownItem tag={Link} to="/prediction">
                     <i className="tim-icons icon-bulb-63" />
                     Predicting Whether a Loan Will Close or Default
@@ -224,34 +195,33 @@ class ComponentsNavbar extends React.Component {
                     Trends In Mortgage Data
                   </DropdownItem>
 
-                  <DropdownItem tag={Link} to="/science">
-                    <i className="tim-icons icon-spaceship" />
-                    The Science Behind Predicting Mortgage Close/Default
-                  </DropdownItem>
-
-                  <DropdownItem tag={Link} to="/failures">
-                    <i className="tim-icons icon-trash-simple" />
-                    Spectacular Fails
-                  </DropdownItem>
-
-                  <DropdownItem tag={Link} to="/stack">
-                    <i className="tim-icons icon-atom" />
-                    Tech Stack, Process, Hosting, and Deployment
-                  </DropdownItem>
-
-                  <DropdownItem tag={Link} to="/visualizations">
-                    <i className="tim-icons icon-atom" />
-                    Visualizations
-                  </DropdownItem>
-
-                  <DropdownItem tag={Link} to="/interactive">
-                    <i className="tim-icons icon-atom" />
-                    Interactive Page (Might remove this later)
-                  </DropdownItem>
-
                 </DropdownMenu>
 
               </UncontrolledDropdown>
+
+              <NavItem>
+              
+               <Button
+                 className="nav-link d-none d-lg-block"
+                 color="primary"
+                 onClick={this.scrollToDownload}
+               >
+                 <i className="tim-icons icon-spaceship" /> "AI - Which potential loans will default?"
+               </Button>
+
+             </NavItem>
+
+              <NavItem>
+
+                <Button
+                  className="nav-link d-none d-lg-block"
+                  color="default"
+                  onClick={this.scrollToDownload}
+                >
+                  <i className="tim-icons icon-coins" /> "AI - What are the trends in mortgages today?"
+                </Button>
+
+              </NavItem>
 
             </Nav>
 
