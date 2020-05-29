@@ -18,9 +18,12 @@ Our website, FANNIESAVES.WIN, features an ML-powered application that allows Fan
 5. Justin -  Data EDA, ML model design, building and testing 
 
 ## List of additional of project links: 
-Here is what I'm submitting: React app: http://www.refinance.win
+React app: http://www.refinance.win
 React repo: https://github.com/bigtoga/Project3_ReactApp
 Flask app: fanniesaves.herokuapp.com 
 Flask repo: https://github.com/bigtoga/Project3_FlaskApp
 Machine learning repo, Tableau: https://github.com/bigtoga/Project3_2
 Original idea repo: https://github.com/bigtoga/Project3
+
+## Additional Project Overview and Documentation: 
+See Project presentation:  Group 1 Project 3 Presentation 
