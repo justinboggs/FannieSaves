@@ -2,8 +2,12 @@
 
 ## Team Members: Joseph, Justin, Kip, Scott, Sean
 
+![](Justin/project3.png)
+
 ## Project Description/Outline: 
 Our website, FANNIESAVES.WIN, features an ML-powered application that allows Fannie Mae to supplement their loan purchasing selection by giving a powerful tool to help determine the quality of an existing loan and its likely future performance. The target audience for the application on the website is a Fannie Mae analyst or mortgage purchase specialist. We utilize SciKit Learn and PyCaret for our ML model set-up, selection and tuning, and make this model available to the analyst / purchase specialist on our website. 
+
+![](Justin/project3-2.png)
 
 ## Datasets to Be Used
 1. Fannie Mae [Single Family Home Loan Performance dataset](https://www.fanniemae.com/portal/funding-the-market/data/loan-performance-data.html)
@@ -16,6 +20,8 @@ Our website, FANNIESAVES.WIN, features an ML-powered application that allows Fan
 3. Kip - Data Gathering and EDA, ML model design, building and testing 
 4. Joseph -  ML model design, building and testing, presentation slides  
 5. Justin -  Data EDA, ML model design, building and testing 
+
+![](Justin/project3-3.png)
 
 ## List of additional of project links: 
 React app: http://www.refinance.win
